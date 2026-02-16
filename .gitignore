@@ -1,0 +1,15 @@
+# Virtual environment
+psusenv/
+venv/
+env/
+
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Database
+db.sqlite3
+
+# IDEs
+.vscode/
+.idea/
