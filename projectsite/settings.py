@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(#&^2)4a+!0x2d706h#e=znw6!j0o0eml7xfm0!d-9fzqanwb4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['psusphere.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -71,11 +71,8 @@ TEMPLATES = [
 ]
 
 STATIC_URL = 'static/'
-
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static'), 
 ]
 
 WSGI_APPLICATION = 'projectsite.wsgi.application'
